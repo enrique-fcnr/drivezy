@@ -1,5 +1,5 @@
 # Nome do Projeto
-CARCONNECT - Compre seu veículo com poucos cliques
+DRIVEZY - Compre seu veículo com poucos cliques
 
 ## Tecnologias Utilizadas
 - HTML
