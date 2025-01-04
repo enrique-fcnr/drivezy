@@ -7,6 +7,12 @@ DRIVEZY - Compre seu veículo com poucos cliques
 - JavaScript
 - Bootstrap
 
+## Identidade Visual
+- Fonte Principal : League Spartan
+- Fonte Secundária : Open Sans 
+- Cor: #7447e1
+
+
 ## Como Usar
 1. Clone este repositório 
 2. Navegue até o diretório do Projeto

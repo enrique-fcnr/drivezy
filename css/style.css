@@ -1,7 +1,9 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/* Fonte principal */
+h1, h2, h3 {
+    font-family: 'League Spartan', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
+/* Fonte secundária */
+body, p {
+    font-family: 'Open Sans', sans-serif;
 }
