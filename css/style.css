@@ -180,7 +180,7 @@ label {
 .input-group .icon {
     font-size: 1.2em;
     margin-right: 10px;
-    color: #007bff;
+    color: rgb(160, 73, 197);
 }
 
 input {
@@ -263,7 +263,7 @@ input::placeholder {
 }
 
 
-/* Vantagens  - Sub-Section */
+/* Vantagens  - Section */
 .vantagens {
     background-color: rgb(234, 232, 234);
     gap: 2rem;
@@ -291,6 +291,73 @@ input::placeholder {
 
 .title-selecao {
     color: #888787;
+}
+
+
+/* Depoimentos - Section */
+.testimonial-section {
+    background-color: rgb(134, 90, 179);
+    text-align: center;
+    padding: 4rem 1rem;
+
+}
+
+.testimonial-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(234, 227, 243);
+
+}
+
+.testimonial-section p {
+    color: rgb(234, 227, 243);
+    margin-bottom: 2rem;
+}
+
+.testimonial-card {
+    background-color: rgb(242, 238, 245);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card h5 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #596168;
+}
+
+.testimonial-card p {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: rgb(160, 73, 197);
+}
+
+.navigation-icons {
+    margin-top: 1rem;
+}
+
+.navigation-icons i {
+    font-size: 1.5rem;
+    color: rgb(160, 73, 197);
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.navigation-icons i:hover {
+    color: rgb(160, 73, 197);
 }
 
 /* Artigos - Section */
