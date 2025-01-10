@@ -293,6 +293,10 @@ input::placeholder {
     color: #888787;
 }
 
+.card-selecao {
+    padding: 3rem;
+}
+
 
 /* Depoimentos - Section */
 .testimonial-section {
