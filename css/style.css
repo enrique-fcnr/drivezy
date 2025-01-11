@@ -1,9 +1,429 @@
-/* Fonte principal */
-h1, h2, h3 {
-    font-family: 'League Spartan', sans-serif;
+/* CSS Reset padrão */
+
+/* Remove margens, padding e bordas padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Fonte secundária */
-body, p {
+body {
+    line-height: 1;
+    font-family: sans-serif;
+    background-color: rgb(235, 225, 244);
+}
+
+body,
+p {
     font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Fonte principal */
+h1,
+h2,
+h3 {
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Define borda zero para elementos que possuem borda por padrão */
+*:focus {
+    outline: none;
+}
+
+/* Remove estilos padrão de listas */
+ol,
+ul {
+    list-style: none;
+}
+
+/* Remove estilos padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Define altura base para imagens e vídeos */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Optional Card animation ----------- */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    line-height: 1.5;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.btn-outline-primary {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+}
+
+/* ------------------------------ */
+
+
+
+
+/* Container principal de margem */
+.container-main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header - Section */
+.header {
+    background-color: rgb(160, 73, 197);
+    height: 90px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+
+}
+
+.header ul {
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+
+/* Hero - Section */
+.hero {
+    height: 88vh;
+    background-color: rgb(209, 188, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    margin: 0;
+    font-size: 6rem;
+    color: rgb(91, 73, 109);
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-btn-item {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(160, 73, 197);
+    color: aliceblue;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Serviços - Section */
+.servicos {
+    width: 100%;
+    background: rgb(225, 215, 236);
+    padding: 4rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-group .icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: rgb(160, 73, 197);
+}
+
+input {
+    border: none;
+    flex: 1;
+    font-size: 1em;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.servico-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+
+    width: 30%;
+    padding: 10px;
+    background: rgb(160, 73, 197);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: rgb(160, 73, 197);
+    border: 3px solid rgb(160, 73, 197);
+
+}
+
+/* Portifolio - Section */
+.portifolio {
+    background-color: rgb(209, 188, 230);
+    gap: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.portifolio-box {
+    width: 370px;
+    height: 270px;
+    background-color: rgb(162, 123, 201);
+    border-radius: 10px;
+    font-size: 3rem;
+    color: #fffbfb;
+}
+
+.middle {
+    height: 340px;
+    width: 400px;
+    background-color: rgb(134, 90, 179);
+}
+
+/* Top Veículos - Section */
+
+.top-veiculos {
+    background-color: rgb(234, 232, 234);
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
+.top-veiculos-title {
+    color: #888787;
+}
+
+
+/* Vantagens  - Section */
+.vantagens {
+    background-color: rgb(234, 232, 234);
+    gap: 2rem;
+    padding: 4rem 0;
+    display: flex;
+}
+
+.vantagens-image {
+    width: 80%;
+}
+
+.vantagens-content {
+    width: 70%;
+}
+
+/* Seleção - Section */
+.selecao {
+    background: rgb(225, 215, 236);
+    gap: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title-selecao {
+    color: #888787;
+}
+
+
+/* Depoimentos - Section */
+.testimonial-section {
+    background-color: rgb(134, 90, 179);
+    text-align: center;
+    padding: 4rem 1rem;
+
+}
+
+.testimonial-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(234, 227, 243);
+
+}
+
+.testimonial-section p {
+    color: rgb(234, 227, 243);
+    margin-bottom: 2rem;
+}
+
+.testimonial-card {
+    background-color: rgb(242, 238, 245);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card h5 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #596168;
+}
+
+.testimonial-card p {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: rgb(160, 73, 197);
+}
+
+.navigation-icons {
+    margin-top: 1rem;
+}
+
+.navigation-icons i {
+    font-size: 1.5rem;
+    color: rgb(160, 73, 197);
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.navigation-icons i:hover {
+    color: rgb(160, 73, 197);
+}
+
+/* Efeito de hover nos cards de depoimentos */
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px) scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+/* Personalização da imagem do card */
+.testimonial-card img {
+    border-radius: 50%; 
+    transition: transform 0.3s ease; 
+}
+
+.testimonial-card:hover img {
+    transform: scale(1.1); 
+}
+
+/* Efeito na citação */
+.testimonial-card .quote-icon {
+    font-size: 2rem; 
+    color: #6c757d; 
+    transition: color 0.3s ease; 
+}
+
+.testimonial-card:hover .quote-icon {
+    color: #007bff;
+}
+
+/* Artigos - Section */
+.artigos {
+    background-color: rgb(209, 188, 230);
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
+.artigos-title {
+    color: #646464;
+}
+
+/* Contato - Section */
+.contato {
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgb(249, 244, 254);
+}
+
+.contato-title {
+    color: #888787;
+}
+
+/* Footer - Section */
+.footer {
+    height: 9rem;
+    background-color: rgb(160, 73, 197);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.footer-title {
+    color: rgb(241, 229, 246);
 }
