@@ -280,78 +280,48 @@ input::placeholder {
 }
 
 /* Seleção - Section */
-/* .selecao {
+/* Section Styles */
+.selecao {
     background: rgb(225, 215, 236);
-    gap: 2rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-
+    padding: 3rem 2rem;
 }
 
 .title-selecao {
-    color: #888787;
+    color: #552eaf;
+    font-size: 2.2rem;
 }
 
+.sub-title {
+    color: #4c4d4f;
+    font-size: 1.12rem;
+}
+
+/* Card Styles */
+.card {
+    background-color: #e0dcea;
+    padding: 0.7rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Initial shadow */
+    transition: box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1), transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Smooth animation with easing */
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* Larger shadow on hover */
+    transform: translateY(-10px);
+    /* Lift card slightly */
+}
+
+/* Card Content Styles */
 .card-selecao {
-    padding: 3rem;
+    padding: 2rem;
 }
 
-
-.box {
-    text-align: center;
-    color: white;
-    width: 200px;
-    height: 220px;
-    background-color: #3498db;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 1rem;
-
-
-}
-
-.box:hover {
-    animation: move 0.5s;
-    background-color: white;
-    color: #3498db;
-    border: 3px solid #3498db;
-    box-shadow: 0 8px 9px rgba(black, 0.4);
-
-}
-
-
-@keyframes move {
-    0% {
-        background-color: #3498db;
-        color: white;
-    }
-
-    100% {
-        background-color: white;
-        color: #3498db;
-    }
-}
-
-
-
- */
 .box {
     transition: opacity 0.8s ease, transform 0.8s ease;
     width: 100%;
     height: 100%;
-}
-
-.card {
-    background-color: #d3c7f2;
-    padding: 0.7rem;
-}
-
-.card-selecao {
-    padding: 2rem;
 }
 
 .card-text {
@@ -360,6 +330,31 @@ input::placeholder {
     color: #552eaf;
 }
 
+/* Arrow Styles */
+.arrow {
+    font-size: 24px;
+    color: #552eaf;
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Smooth transition for arrow */
+}
+
+/* Card hover - activate bouncing effect */
+.card:hover .arrow {
+    animation: bounce 0.8s infinite alternate cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Bouncing Keyframes */
+@keyframes bounce {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(8px);
+        /* Slightly reduced distance for smoothness */
+    }
+}
 
 /* Depoimentos - Section */
 .testimonial-section {
