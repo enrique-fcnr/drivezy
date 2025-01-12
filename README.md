@@ -11,6 +11,8 @@ DRIVEZY - Compre seu veículo com poucos cliques
 - Fonte Principal : League Spartan
 - Fonte Secundária : Open Sans 
 - Cor: #7447e1
+- Cor-dark: #552eaf
+- Cor-light: #d3c7f2
 
 
 ## Como Usar

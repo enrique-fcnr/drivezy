@@ -12,12 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!--Fontawesome-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <!--Fontes Roboto e Montserrat-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+
+    <!-- Js file -->
+    <script src="/js/index.js" defer></script>
 </head>
 
 <body>
@@ -183,61 +187,80 @@
 
         <!--Section Seleção e Marcas-->
         <section class="selecao">
-            <h2 class="title-selecao">Seleção</h2>
+            <h2 class="title-selecao">Veja a Nossa Seleção</h2>
+            <p class="sub-title">Cheque a nossa seleção de carros de acordo com o tipo preferido.</p>
             <!-- Primeira Linha -->
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img src="https://placehold.co/600x300/png" class="card-img-top" alt="...">
+            <div class="row gy-4 d-flex justify-content-center m-2">
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <div class="card box" style="opacity: 0; transform: translateY(50px);">
                         <div class="card-body">
-                            <p class="card-text">Tipe 1</p>
+                            <p class="card-text">Sedan <a href="#" class="arrow">&#10140;</a></p>
+
                         </div>
+                        <img src="/img/sedan-img-1.avif" class="card-img-top card-selecao" alt="Sedan">
+
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://placehold.co/600x300/png" class="card-img-top" alt="...">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card box" style="opacity: 0; transform: translateY(50px);">
                         <div class="card-body">
-                            <p class="card-text">Tipe 2</p>
+                            <p class="card-text">Pick Up <a href="#" class="arrow">&#10140;</a></p>
                         </div>
+                        <img src="img/pickup-1-sem-fundo.png" class="card-img-top card-selecao" alt="Pick Up">
+
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://placehold.co/600x300/png" class="card-img-top" alt="...">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card box" style="opacity: 0; transform: translateY(50px);">
                         <div class="card-body">
-                            <p class="card-text">Tipe 3</p>
+                            <p class="card-text">SUV <a href="#" class="arrow">&#10140;</a></p>
                         </div>
+                        <img src="img/suv-5.avif" class="card-img-top card-selecao" alt="SUV">
+
                     </div>
                 </div>
             </div>
             <!-- Segunda Linha -->
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img src="https://placehold.co/600x300/png" class="card-img-top" alt="...">
+            <div class="row gy-4 d-flex justify-content-center m-2">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card box" style="opacity: 0; transform: translateY(50px);">
                         <div class="card-body">
-                            <p class="card-text">Tipe 4</p>
+                            <p class="card-text">Hatch Back <a href="#" class="arrow">&#10140;</a></p>
                         </div>
+                        <img src="img/hatchs-png.png" class="card-img-top card-selecao" alt="Hatch Back">
+
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://placehold.co/600x300/png" class="card-img-top" alt="...">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card box" style="opacity: 0; transform: translateY(50px);">
                         <div class="card-body">
-                            <p class="card-text">Tipe 5</p>
+                            <p class="card-text">Electric <a href="#" class="arrow">&#10140;</a></p>
                         </div>
+                        <img src="img/teslta-png.png" class="card-img-top card-selecao" alt="Electric">
+
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://placehold.co/600x300/png" class="card-img-top" alt="...">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card box" style="opacity: 0; transform: translateY(50px);">
                         <div class="card-body">
-                            <p class="card-text">Tipe 6</p>
+                            <p class="card-text">Van <a href="#" class="arrow">&#10140;</a></p>
                         </div>
+                        <img src="img/van-png.png" class="card-img-top card-selecao" alt="Van">
+
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Section Marcas -->
+        <section class="marcas">
+            <div class="box-marcas"><img src="img/logos-sem-fundo/logo-bmw-removebg-preview.png" alt=""></div>
+            <div class="box-marcas"><img src="img/logos-sem-fundo/logo-chevrolet-removebg-preview.png" alt=""></div>
+            <div class="box-marcas"><img src="img/logos-sem-fundo/logo-honda-removebg-preview.png" alt=""></div>
+            <div class="box-marcas"><img src="img/logos-sem-fundo/logo-mercedes-removebg-preview.png" alt=""></div>
+            <div class="box-marcas"><img src="img/logos-sem-fundo/logo-nissan-removebg-preview.png" alt=""></div>
+            <div class="box-marcas"><img src="img/logos-sem-fundo/logo-toyota-removebg-preview.png" alt=""></div>
+
 
         </section>
   <!-- Section Depoimentos -->
@@ -373,7 +396,8 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
                         <h2 class="artigos-title">Veja artigos do nosso Blog</h2>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur. Velit amet quam tristique aliquet
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur. Velit amet quam tristique
+                            aliquet
                             urna proin nam pellentesque risus.</p>
                     </div>
                     <a href="#" class="btn btn-primary btn-sm">See All Blogs &nbsp;↗</a>
@@ -386,9 +410,11 @@
                                 alt="Blog 1">
                             <div class="card-body">
                                 <p class="text-muted mb-1">April 7, 2024</p>
-                                <h5 class="card-title fw-bold">Eco-Friendly Rentals: Sustainability Solutions for
+                                <h5 class="card-title fw-bold">Eco-Friendly Rentals: Sustainability Solutions
+                                    for
                                     Property Owners...</h5>
-                                <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur. Ac nisl lacus
+                                <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur. Ac nisl
+                                    lacus
                                     fermentum sollicitudin nascetur ipsum.</p>
                                 <a href="#" class="btn btn-outline-primary btn-sm">See Details &nbsp;↗</a>
                             </div>
@@ -401,9 +427,11 @@
                                 alt="Blog 2">
                             <div class="card-body">
                                 <p class="text-muted mb-1">April 7, 2024</p>
-                                <h5 class="card-title fw-bold">Rental Renovation: Smart Upgrades That Add Value and
+                                <h5 class="card-title fw-bold">Rental Renovation: Smart Upgrades That Add Value
+                                    and
                                     Charm...</h5>
-                                <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur. Ac nisl lacus
+                                <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur. Ac nisl
+                                    lacus
                                     fermentum sollicitudin nascetur ipsum.</p>
                                 <a href="#" class="btn btn-outline-primary btn-sm">See Details &nbsp;↗</a>
                             </div>
@@ -416,9 +444,11 @@
                                 alt="Blog 3">
                             <div class="card-body">
                                 <p class="text-muted mb-1">April 7, 2024</p>
-                                <h5 class="card-title fw-bold">Rental Renovation: Smart Upgrades That Add Value and
+                                <h5 class="card-title fw-bold">Rental Renovation: Smart Upgrades That Add Value
+                                    and
                                     Charm...</h5>
-                                <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur. Ac nisl lacus
+                                <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur. Ac nisl
+                                    lacus
                                     fermentum sollicitudin nascetur ipsum.</p>
                                 <a href="#" class="btn btn-outline-primary btn-sm">See Details &nbsp;↗</a>
                             </div>
@@ -433,7 +463,8 @@
                                 <p class="text-muted mb-1">April 7, 2024</p>
                                 <h5 class="card-title fw-bold">Maximizing Rental Returns: Proven Strategies for
                                     Landlords...</h5>
-                                <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur. Ac nisl lacus
+                                <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur. Ac nisl
+                                    lacus
                                     fermentum sollicitudin nascetur ipsum.</p>
                                 <a href="#" class="btn btn-outline-primary btn-sm">See Details &nbsp;↗</a>
                             </div>
