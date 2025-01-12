@@ -230,8 +230,6 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .portifolio-box {
@@ -354,6 +352,14 @@ input::placeholder {
         transform: translateX(8px);
         /* Slightly reduced distance for smoothness */
     }
+}
+
+/* Marcas - Section */
+.marcas {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    background-color: rgb(234, 232, 234);
 }
 
 /* Depoimentos - Section */
