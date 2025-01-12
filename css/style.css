@@ -280,7 +280,7 @@ input::placeholder {
 }
 
 /* Seleção - Section */
-.selecao {
+/* .selecao {
     background: rgb(225, 215, 236);
     gap: 2rem;
     padding: 2rem;
@@ -295,6 +295,69 @@ input::placeholder {
 
 .card-selecao {
     padding: 3rem;
+}
+
+
+.box {
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 220px;
+    background-color: #3498db;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem;
+
+
+}
+
+.box:hover {
+    animation: move 0.5s;
+    background-color: white;
+    color: #3498db;
+    border: 3px solid #3498db;
+    box-shadow: 0 8px 9px rgba(black, 0.4);
+
+}
+
+
+@keyframes move {
+    0% {
+        background-color: #3498db;
+        color: white;
+    }
+
+    100% {
+        background-color: white;
+        color: #3498db;
+    }
+}
+
+
+
+ */
+.box {
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background-color: #d3c7f2;
+    padding: 0.7rem;
+}
+
+.card-selecao {
+    padding: 2rem;
+}
+
+.card-text {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.7rem;
+    color: #552eaf;
 }
 
 
