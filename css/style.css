@@ -428,6 +428,39 @@ input::placeholder {
     color: rgb(160, 73, 197);
 }
 
+/* Efeito de hover nos cards de depoimentos */
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px) scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+/* Personalização da imagem do card */
+.testimonial-card img {
+    border-radius: 50%; 
+    transition: transform 0.3s ease; 
+}
+
+.testimonial-card:hover img {
+    transform: scale(1.1); 
+}
+
+/* Efeito na citação */
+.testimonial-card .quote-icon {
+    font-size: 2rem; 
+    color: #6c757d; 
+    transition: color 0.3s ease; 
+}
+
+.testimonial-card:hover .quote-icon {
+    color: #007bff;
+}
+
 /* Artigos - Section */
 .artigos {
     background-color: rgb(209, 188, 230);
