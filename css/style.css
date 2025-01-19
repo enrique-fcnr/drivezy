@@ -81,7 +81,50 @@ svg {
 
 /* ------------------------------ */
 
+/* Botão padrão que direciona para outras seções */
 
+/* Agrupando os seletores para simplificar */
+a:link,
+a:visited,
+a:active,
+.btn-link {
+    text-decoration: none;
+
+}
+
+.container-btn-link {
+    width: 100%;
+}
+
+/* Subtitle section */
+.sub-title {
+    color: #4c4d4f;
+    font-size: 1.4rem;
+}
+
+
+/* Estilo do botão */
+.btn-link {
+    min-width: 15%;
+    padding: 1.3rem 2rem;
+    border: 2px solid transparent;
+    color: white;
+    background-color: #7447e1;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    cursor: pointer;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+
+}
+
+/* Efeito de hover */
+.btn-link:hover {
+    background-color: white;
+    color: #7447e1;
+    border-color: #7447e1;
+    /* Modifica a cor da borda durante o hover */
+}
 
 
 /* Container principal de margem */
@@ -89,6 +132,8 @@ svg {
     width: 90%;
     margin: 0 auto;
 }
+
+/* ----------------------------------------- */
 
 /* header - Section */
 .header {
@@ -249,17 +294,48 @@ input::placeholder {
 
 /* Top Veículos - Section */
 
-.top-veiculos {
-    background-color: rgb(234, 232, 234);
-    gap: 2rem;
+.title-veiculos {
+    color: #552eaf;
+    font-size: 3rem;
+}
+
+
+.box-top-veiculos {
+    height: 100%;
+}
+
+.card.vehicle-card {
+    background-color: #e0dcea;
+    /* Altere a cor para o que preferir */
+    border-radius: 8px;
+    /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.top-veiculos-img {
+    height: 100%;
     padding: 2rem;
-
 }
 
-.top-veiculos-title {
-    color: #888787;
+.title-card-veiculo {
+    font-size: 2rem;
+    color: #525151;
+    font-family: 'League Spartan', sans-serif;
 }
 
+.price-card {
+    color: #525151;
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.disponivel {
+    font-size: 1.16rem;
+    color: #7447e1;
+}
 
 /* Vantagens  - Section */
 .vantagens {
@@ -286,13 +362,9 @@ input::placeholder {
 
 .title-selecao {
     color: #552eaf;
-    font-size: 2.2rem;
+    font-size: 3rem;
 }
 
-.sub-title {
-    color: #4c4d4f;
-    font-size: 1.12rem;
-}
 
 /* Card Styles */
 .card {
@@ -444,31 +516,31 @@ input::placeholder {
 
 /* Efeito de hover nos cards de depoimentos */
 .testimonial-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    border-radius: 8px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
     overflow: hidden;
 }
 
 .testimonial-card:hover {
-    transform: translateY(-10px) scale(1.05); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Personalização da imagem do card */
 .testimonial-card img {
-    border-radius: 50%; 
-    transition: transform 0.3s ease; 
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
 
 .testimonial-card:hover img {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 /* Efeito na citação */
 .testimonial-card .quote-icon {
-    font-size: 2rem; 
-    color: #6c757d; 
-    transition: color 0.3s ease; 
+    font-size: 2rem;
+    color: #6c757d;
+    transition: color 0.3s ease;
 }
 
 .testimonial-card:hover .quote-icon {
