@@ -1,3 +1,7 @@
+/*  */
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
 /* CSS Reset padrão */
 
 /* Remove margens, padding e bordas padrão */
@@ -293,7 +297,6 @@ input::placeholder {
 }
 
 /* Top Veículos - Section */
-
 .title-veiculos {
     color: #552eaf;
     font-size: 3rem;
@@ -338,19 +341,68 @@ input::placeholder {
 }
 
 /* Vantagens  - Section */
-.vantagens {
-    background-color: rgb(234, 232, 234);
-    gap: 2rem;
-    padding: 4rem 0;
+/* Estilos personalizados */
+.car-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-section {
+    padding: 50px 0;
+}
+
+.title-vantagem {
+    font-size: 3rem;
+    color: #7447e1;
+    margin-bottom: 1rem;
+
+
+}
+
+.subtitle-vantagem {
+    color: #6c757d;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    line-height: 26px;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+    /* Text-muted */
+}
+
+.feature {
     display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-bottom: 3rem;
 }
 
-.vantagens-image {
-    width: 80%;
+.title-feature-vantagem {
+    color: #414040;
+    font-size: 1.3rem;
+
 }
 
-.vantagens-content {
-    width: 70%;
+.feature-content-vantagem p {
+    line-height: 23px;
+}
+
+.feature i {
+    font-size: 1.8rem;
+    color: #7447e1;
+    margin-right: 10px;
+    align-self: flex-start;
+}
+
+.btn-about {
+    background-color: #7447e1;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.btn-about:hover {
+    background-color: #7447e1;
 }
 
 /* Seleção - Section */
