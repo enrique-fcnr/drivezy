@@ -605,83 +605,89 @@
             </div>
 
         </section>
-        <!--Section Contatos-->
-        <section class="contato">
-            <h2 class="contato-title">Veja artigos do nosso Blog</h2>
-            <div class="row align-items-center">
-                <!-- Car Images Section -->
-                <div class="col-md-6 car-image">
-                    <img src="https://via.placeholder.com/900x700" alt="...">
-                </div>
-                <!-- Form Section -->
-                <div class="col-md-6">
-                    <div class="form-container">
-                        <h2 class="form-title">Reserve Agora</h2>
-                        <p class="form-description">Lorem ipsum dolor sit amet consectetur. Velit amet quam
-                            tristique aliquet urna proin nam pellentesque risus.</p>
-                        <form>
-                            <!-- Name -->
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name*</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                            </div>
-                            <!-- Phone Number -->
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Phone Number*</label>
-                                <input type="text" class="form-control" id="phone"
-                                    placeholder="Enter your phone number">
-                            </div>
-                            <!-- Email -->
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email*</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                            </div>
-                            <!-- Choose Car -->
-                            <div class="mb-3">
-                                <label for="car" class="form-label">Choose your car</label>
-                                <select class="form-select" id="car">
-                                    <option selected>Select a car</option>
-                                    <option value="1">Sedan</option>
-                                    <option value="2">SUV</option>
-                                    <option value="3">Truck</option>
-                                </select>
-                            </div>
-                            <!-- Pick-Up Location and Date -->
-                            <div class="row mb-3">
-                                <div class="col-md-6">
-                                    <label for="pickup-location" class="form-label">Pick-Up Location</label>
-                                    <input type="text" class="form-control" id="pickup-location"
-                                        placeholder="Pick-Up location">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="pickup-date" class="form-label">Select Date</label>
-                                    <input type="date" class="form-control" id="pickup-date">
-                                </div>
-                            </div>
-                            <!-- Drop-Off Location and Date -->
-                            <div class="row mb-3">
-                                <div class="col-md-6">
-                                    <label for="dropoff-location" class="form-label">Drop-Off Location</label>
-                                    <input type="text" class="form-control" id="dropoff-location"
-                                        placeholder="Drop-Off location">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="dropoff-date" class="form-label">Select Date</label>
-                                    <input type="date" class="form-control" id="dropoff-date">
-                                </div>
-                            </div>
-                            <!-- Submit Button -->
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-submit">Submit A Request
-                                    <span>&#9993;</span></button>
-                            </div>
-                        </form>
+         <!-- Section Contatos -->
+<section class="contato">
+    <div class="row align-items-center">
+        <!-- Car Images Section -->
+        <div class="col-md-6 car-image">
+            <img src="/img/lateral-de-carro.png" alt="...">
+        </div>
+        <!-- Form Section -->
+        <div class="col-md-6">
+            <div class="form-container">
+                <h2 class="form-title">Reserve seu Carro</h2>
+                <p class="form-description">Aqui há um carro feito sob medida para você!</p>
+                <form id="reservation-form" action="https://example.com/api/reservations" method="POST">
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome completo..." required>
+                        <div class="invalid-feedback">Por favor, insira seu nome.</div>
+                    </div>
+                    <!-- Phone Number -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Para entrarmos em contato..." required>
+                        <div class="invalid-feedback">Por favor, insira um número de telefone válido.</div>
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Seu melhor e-mail..." required>
+                        <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+                    </div>
+                    <!-- Choose Car -->
+                    <div class="mb-3">
+                        <label for="car" class="form-label">Modelo</label>
+                        <select class="form-select" id="car" name="car" required>
+                            <option selected disabled>Escolha seu Modelo</option>
+                            <option value="Sedan">Sedan</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Truck">Truck</option>
+                        </select>
+                        <div class="invalid-feedback">Por favor, escolha um modelo.</div>
+                    </div>
+                    <!-- Pick-Up Location -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="pickup-location" class="form-label">Local de Retirada</label>
+                            <input type="text" class="form-control" id="pickup-location" name="pickup_location" placeholder="Onde quer buscá-lo?" required>
+                            <div class="invalid-feedback">Por favor, insira o local de retirada.</div>
+                        </div>
+                    </div>
+                    <!-- Date Range -->
+                    <div class="mb-3">
+                        <label for="date-range" class="form-label">Intervalo de Locação</label>
+                        <input type="text" id="date-range" class="form-control" name="date_range" placeholder="Ex: 20/01/2025 - 25/01/2025" required>
+                        <div class="invalid-feedback">Por favor, insira um intervalo de datas válido.</div>
+                    </div>
+                    <!-- Campo para Observações -->
+                    <div class="mb-3">
+                        <label for="observations" class="form-label">Observações</label>
+                        <textarea id="observations" name="observations" class="form-control" rows="4" placeholder="Fale mais sobre o que precisa..."></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="d-grid">
+                        <a href="https://wa.me/553520023451" target="_blank" class="btn btn-submit">
+                            Ver Opções
+                            <span>&#9993;</span>
+                        </a>
+                    </div>
+                </form>
+                <!-- Additional Info Section -->
+                <div class="additional-info mt-4">
+                    <h5>Nossa localização</h5>
+                    <p><strong>Telefone:</strong> (35) 3571-1258</p>
+                    <p><strong>Endereço:</strong> Av Americo Luz, 123 - Centro, Muzambinho-MG</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.7979571556624!2d-46.52461788142238!3d-21.37374275340559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b63fc6800072ab%3A0xe9ace4ed22d994c7!2sSales%20Contabilidade!5e0!3m2!1spt-BR!2sus!4v1737314514409!5m2!1spt-BR!2sus" 
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
-
-
-        </section>
+        </div>
+    </div>
+</section>
         <!--Section Footer-->
         <footer class="pt-5 pb-4" style="background-color: #7447e1; color: #FFFFFF;">
 
