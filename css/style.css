@@ -356,10 +356,24 @@ input::placeholder {
 
 /* Marcas - Section */
 .marcas {
-    display: flex;
-    justify-content: space-around;
-    padding: 5rem;
+
     background-color: rgb(234, 232, 234);
+}
+
+
+.box-marcas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+
+
+}
+
+.box-item-marcas {
+    display: flex;
+    justify-content: center;
+
 }
 
 /* Depoimentos - Section */
