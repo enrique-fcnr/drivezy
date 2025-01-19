@@ -480,10 +480,8 @@ input::placeholder {
 
 /* Marcas - Section */
 .marcas {
-
     background-color: rgb(234, 232, 234);
 }
-
 
 .box-marcas {
     display: flex;
@@ -601,14 +599,53 @@ input::placeholder {
 
 /* Artigos - Section */
 .artigos {
-    background-color: rgb(209, 188, 230);
+    /* background-color: rgb(209, 188, 230); */
+    background-color: rgb(245, 245, 245);
     gap: 2rem;
     padding: 2rem;
 
 }
 
-.artigos-title {
-    color: #646464;
+.title-artigos {
+    font-size: 3rem;
+    color: #552eaf;
+    margin-bottom: 1rem;
+}
+
+.subtitle-artigos {
+    color: #4c4d4f;
+    font-size: 1.4rem;
+}
+
+.card-blog {
+    height: 100%;
+    background-color: #ececec;
+    border: 7px solid transparent;
+    color: #552eaf;
+    box-sizing: border-box;
+    /* transition: all 0.2s ease-in-out; */
+    transition: background-color 0.3s ease, border 0.3s ease-in;
+    /* Transição suave */
+}
+
+.card-blog:hover {
+    border: 7px solid #8d65eb;
+    background-color: white;
+}
+
+.card-title-blog {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+
+}
+
+
+.card-text-blog {
+    margin-top: 1.4rem;
+    color: #a3a5a8;
+    line-height: 25px;
+    font-size: 1.25rem;
+
 }
 
 /* Contato - Section */
