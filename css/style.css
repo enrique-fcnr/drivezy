@@ -138,7 +138,7 @@ a:active,
 } */
 
 .container-main {
-    padding: 3rem;
+    padding: 3rem 2rem;
 }
 
 /* ----------------------------------------- */
@@ -301,6 +301,12 @@ input::placeholder {
 }
 
 /* Top Veículos - Section */
+
+.top-veiculos {
+    gap: 2rem;
+    padding: 2rem;
+}
+
 .title-veiculos {
     color: #552eaf;
     font-size: 3rem;
@@ -413,6 +419,8 @@ input::placeholder {
 /* Section Styles */
 .selecao {
     background: rgb(225, 215, 236);
+    gap: 2rem;
+    padding: 2rem;
 }
 
 
