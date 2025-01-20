@@ -1,5 +1,5 @@
 # Nome do Projeto
-DRIVEZY - Compre seu veículo com poucos cliques
+DRIVEZY - Compre ou alugue seu veículo com poucos cliques.
 
 ## Tecnologias Utilizadas
 - HTML
