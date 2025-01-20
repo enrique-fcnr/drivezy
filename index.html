@@ -18,15 +18,71 @@
     <link
         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
 
 <body>
     <!--Section Header-->
-    <div class="container">
-    </div>
-    <!--Section Hero-->
-    <div class="container">
-    </div>
+<div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="">
+                <img src="./img/logo-preta-sem-fundo.png" alt="logo-drivezy" style="width: 150px; height: auto;">
+            </a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="login-button">Login</a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+</div>
+
+<!--Section Hero-->
+<div class="container-fluid">
+    <section class="hero-section">
+        <div class="container d-flex align-items-center justify-content-center text-center flex-column text-white">
+            <h1>Compre o seu carro</h1>
+            <h1>em <span class="destaque">poucos cliques</span></h1>
+            <div class="d-flex justify-content-center gap-4">
+                <button class="btn btn-primary btn-lg btn-filled">
+                    <i class="bi bi-car-front-fill"></i> Ver Carros
+                </button>
+            
+                <button class="btn btn-outline-primary btn-lg btn-outline">
+                    <i class="bi bi-car-front-fill"></i> Saiba Mais
+                </button>
+            </div>            
+        </div>
+    </section>
+</div>
+
     <!--Section Serviços e Portfólio-->
     <div class="container">
     </div>
@@ -49,87 +105,88 @@
     <div class="container">
     </div>
     <!--Section Footer-->
-<div class="container">
+    <div class="container">
 
-    <footer class="pt-5 pb-4" style="background-color: #7447e1; color: #FFFFFF;">
+        <footer class="pt-5 pb-4" style="background-color: #7447e1; color: #FFFFFF;">
 
-        <div class="container text-md-left">
+            <div class="container text-md-left">
 
-            <div class="row text-md-left">
+                <div class="row text-md-left">
 
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <!-- <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">DRIVEZY CORPORATION</h5> -->
-                    <p>DRIVEZY - Compre seu veículo com poucos cliques</p>
-                    
-                    <!-- Logo da Drivezy -->
-                    <img src="./img/logo-branca-sem-fundo.png.png" alt="Logo Drivezy" class="img-fluid w-50">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <!-- <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">DRIVEZY CORPORATION</h5> -->
+                        <p>DRIVEZY - Compre seu veículo com poucos cliques</p>
 
-                </div>
+                        <!-- Logo da Drivezy -->
+                        <img src="./img/logo-branca-sem-fundo.png.png" alt="Logo Drivezy" class="img-fluid w-50">
 
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <!-- <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">PÁGINAS IMPORTANTES</h5> -->
-                    <p><a href="#" class="text-white" style="text-decoration: none;">Sobre nós</a></p>
-                    <p><a href="#" class="text-white" style="text-decoration: none;">Políticas de privacidade</a></p>
-                    <p><a href="#" class="text-white" style="text-decoration: none;">Termos de uso</a></p>
-                    <p><a href="#" class="text-white" style="text-decoration: none;">Política de cookies</a></p>
-                </div>
-
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <!-- <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">MENU DE RODAPÉ</h5> -->
-                    <p><a href="#" class="text-white" style="text-decoration: none;">Alugar veículos</a></p>
-                    <p><a href="#" class="text-white" style="text-decoration: none;">Comprar veículos</a></p>
-                    <p><a href="#" class="text-white" style="text-decoration: none;">Anuncie seu veículo</a></p>
-                    <p><a href="#" class="text-white" style="text-decoration: none;">Compare veículos</a></p>
-                </div>
-
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <!-- <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">OUTROS ITENS</h5> -->
-                    <p><i class="fas fa-home me-2"></i>São Paulo, SP, Vila Mariana, BR</p>
-                    <p><i class="fas fa-envelope me-2"></i>contato@drivezy.com.br</p>
-                    <p><i class="fas fa-phone me-2"></i>(21) 99999-9999</p>
-                    <p><i class="fas fa-print me-2"></i>(21) 99999-9999</p>
-                </div>
-
-                <hr class="mb-4" style="border-color: #FFFFFF;">
-                <div class="row align-items-left">
-                    <div class="col-md-7 col-lg-8">
-                        <p>© 2021 Drivezy. Todos os direitos reservados:
-                            <a href="#" style="text-decoration: none; color: #FFFFFF;">
-                                <strong>Alunos Fiap</strong>
-                            </a>
-                        </p>
                     </div>
-                    <div class="col-md-5 col-lg-4">
-                        <div class="text-center text-md-right">
-                            <ul class="list-unstyled list-inline">
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                                            class="fab fa-facebook"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                                            class="fab fa-instagram"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                                            class="fab fa-pinterest"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                                            class="fab fa-whatsapp"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                                            class="fab fa-youtube"></i></a>
-                                </li>
-                            </ul>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <!-- <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">PÁGINAS IMPORTANTES</h5> -->
+                        <p><a href="#" class="text-white" style="text-decoration: none;">Sobre nós</a></p>
+                        <p><a href="#" class="text-white" style="text-decoration: none;">Políticas de privacidade</a>
+                        </p>
+                        <p><a href="#" class="text-white" style="text-decoration: none;">Termos de uso</a></p>
+                        <p><a href="#" class="text-white" style="text-decoration: none;">Política de cookies</a></p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <!-- <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">MENU DE RODAPÉ</h5> -->
+                        <p><a href="#" class="text-white" style="text-decoration: none;">Alugar veículos</a></p>
+                        <p><a href="#" class="text-white" style="text-decoration: none;">Comprar veículos</a></p>
+                        <p><a href="#" class="text-white" style="text-decoration: none;">Anuncie seu veículo</a></p>
+                        <p><a href="#" class="text-white" style="text-decoration: none;">Compare veículos</a></p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <!-- <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">OUTROS ITENS</h5> -->
+                        <p><i class="fas fa-home me-2"></i>São Paulo, SP, Vila Mariana, BR</p>
+                        <p><i class="fas fa-envelope me-2"></i>contato@drivezy.com.br</p>
+                        <p><i class="fas fa-phone me-2"></i>(21) 99999-9999</p>
+                        <p><i class="fas fa-print me-2"></i>(21) 99999-9999</p>
+                    </div>
+
+                    <hr class="mb-4" style="border-color: #FFFFFF;">
+                    <div class="row align-items-left">
+                        <div class="col-md-7 col-lg-8">
+                            <p>© 2021 Drivezy. Todos os direitos reservados:
+                                <a href="#" style="text-decoration: none; color: #FFFFFF;">
+                                    <strong>Alunos Fiap</strong>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-lg-4">
+                            <div class="text-center text-md-right">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                                class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                                class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                                class="fab fa-pinterest"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                                class="fab fa-whatsapp"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                                class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</div>
+        </footer>
+    </div>
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
