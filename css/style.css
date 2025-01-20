@@ -132,9 +132,13 @@ a:active,
 
 
 /* Container principal de margem */
-.container-main {
+/* .container-main {
     width: 90%;
     margin: 0 auto;
+} */
+
+.container-main {
+    padding: 3rem;
 }
 
 /* ----------------------------------------- */
@@ -409,8 +413,8 @@ input::placeholder {
 /* Section Styles */
 .selecao {
     background: rgb(225, 215, 236);
-    padding: 3rem 2rem;
 }
+
 
 .title-selecao {
     color: #552eaf;
@@ -452,6 +456,10 @@ input::placeholder {
     font-family: 'League Spartan', sans-serif;
     font-size: 1.7rem;
     color: #552eaf;
+}
+
+.box-space {
+    padding: 4rem 4rem 4rem 3rem;
 }
 
 /* Arrow Styles */
@@ -622,7 +630,7 @@ input::placeholder {
 .card-blog {
     height: 100%;
     background-color: #ececec;
-    border: 7px solid transparent;
+    border: 10px solid transparent;
     color: #552eaf;
     box-sizing: border-box;
     /* transition: all 0.2s ease-in-out; */
@@ -631,7 +639,7 @@ input::placeholder {
 }
 
 .card-blog:hover {
-    border: 7px solid #8d65eb;
+    border: 10px solid #8d65eb;
     background-color: white;
 }
 
