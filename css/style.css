@@ -144,54 +144,193 @@ a:active,
 /* ----------------------------------------- */
 
 /* header - Section */
-.header {
-    background-color: rgb(160, 73, 197);
-    height: 90px;
-    color: aliceblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
 
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
 }
 
-.header ul {
-    display: flex;
-    gap: 0.5rem;
 
+.navbar-brand {
+    font-weight: 500;
+    color: #7447e1;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+
+.login-button {
+    background-color: #7447e1;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+
+.login-button:hover {
+    background-color: #5a34b3;
+}
+
+
+.navbar-toggler {
+    border: none;
+    font: 1.25rem;
+}
+
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+.nav-link {
+    font-weight: 500;
+    color: #666777;
+    margin: 0 15px;
+    transition: 0.3s color;
+    position: relative;
+}
+
+
+.nav-link:hover, .nav-link.active {
+    color: #000000;
+}
+
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #7447e1;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+        transition: 0.3s ease-in-out;
+    }
 }
 
 
 /* Hero - Section */
-.hero {
-    height: 88vh;
-    background-color: rgb(209, 188, 230);
+
+
+.hero-section {
+    background: url(../img/header-image-png.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.hero-section::before {
+    /* background-color: rgba(0, 0, 0, 0.6); Transparência ajustada */
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+.hero-section .container {
+    z-index: 1;
+    position: relative;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-.hero-title {
-    margin: 0;
-    font-size: 6rem;
-    color: rgb(91, 73, 109);
+
+.destaque {
+    color: #7447e1;
 }
 
-.hero-btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    margin-top: -0px;
+    color: black;
 }
 
-.hero-btn-item {
-    padding: 1rem;
-    font-size: 1.5rem;
-    background-color: rgb(160, 73, 197);
-    color: aliceblue;
-    border: none;
-    border-radius: 6px;
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .hero-section h2 {
+        font-size: 1.5rem;
+    }
 }
+
+
+.btn {
+    padding: 15px 30px; /* Botões maiores */
+    font-size: 18px; /* Texto maior */
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 12px; /* Bordas mais arredondadas */
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+/* Botão preenchido */
+.btn-filled {
+    background-color: #7447e1; /* Roxo preenchido */
+    color: #ffffff; /* Texto branco */
+    border: 2px solid #7447e1; /* Cantos arredondados */
+    padding: 10px 25px;
+    font-size: 1.2em;
+}
+
+
+.btn-filled:hover {
+    background-color: #5a34b3; /* Roxo preenchido */
+    color: #ffffff; /* Texto branco */
+    border: 2px solid #5a34b3; /* Cantos arredondados */
+    padding: 10px 25px;
+    font-size: 1.2em;
+}
+
+
+/* Botão vazado */
+.btn-outline {
+    color: #7447e1; /* Roxo do texto e ícone */
+    border: 2px solid #7447e1;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    background-color: #ffffff7c;
+}
+
+
+.btn-outline:hover {
+    background-color: #7447e1; /* Fica preenchido no hover */
+    border-color: #7447e1;
+    color: #fff;
+}
+
 
 /* Serviços - Section */
 .servicos {
