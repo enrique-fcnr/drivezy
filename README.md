@@ -1,4 +1,4 @@
-# Nome do Projeto
+# Nome do Projeto - DRIVEZY 
 DRIVEZY - Compre ou alugue seu veículo com poucos cliques.
 
 ## Tecnologias Utilizadas
